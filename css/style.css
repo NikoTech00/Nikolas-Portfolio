@@ -422,3 +422,214 @@ a {
 .service-link:hover span {
     transform: translateX(5px);
 }
+
+/* =========================
+   MOBILE MENU BUTTON
+========================= */
+
+.menu-toggle {
+    display: none;
+
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+
+    width: 18px;
+    height: 1px;
+
+    margin: 4px auto;
+
+    background: #ffffff;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+.mobile-menu {
+    position: fixed;
+
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+
+    padding: 2rem 5%;
+
+    background: rgba(10, 10, 10, 0.98);
+
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    z-index: 999;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-10px);
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease,
+        transform 0.3s ease;
+}
+
+.mobile-menu.active {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+}
+
+.mobile-nav a {
+    font-size: 1.4rem;
+
+    color: #ffffff;
+}
+
+
+/* HAMBURGER ACTIVE */
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg);
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects {
+    padding: 9rem 0;
+
+    background: #090909;
+}
+
+.projects-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1.5rem;
+}
+
+.project-card {
+    cursor: pointer;
+}
+
+.project-card:first-child {
+    grid-column: span 2;
+}
+
+.project-preview {
+    position: relative;
+
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(200, 169, 107, 0.12),
+            transparent 50%
+        ),
+        #121212;
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 24px;
+
+    overflow: hidden;
+}
+
+.project-placeholder {
+    font-size: clamp(2rem, 5vw, 5rem);
+
+    font-weight: 700;
+
+    letter-spacing: -0.05em;
+
+    color: rgba(255, 255, 255, 0.12);
+
+    transition:
+        transform 0.4s ease,
+        color 0.4s ease;
+}
+
+.project-card:hover .project-placeholder {
+    transform: scale(1.04);
+
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.4rem 0.5rem;
+}
+
+.project-category {
+    margin-bottom: 0.4rem;
+
+    font-size: 0.7rem;
+
+    letter-spacing: 0.15em;
+
+    color: #c8a96b;
+}
+
+.project-info h3 {
+    font-size: 1.4rem;
+}
+
+.project-arrow {
+    font-size: 1.5rem;
+
+    color: #777777;
+
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease;
+}
+
+.project-card:hover .project-arrow {
+    transform: translate(3px, -3px);
+
+    color: #ffffff;
+}

@@ -9,7 +9,11 @@
     }
 
     .nav-cta {
-        padding: 0.6rem 1rem;
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
     }
 
     .hero {
@@ -30,32 +34,48 @@
     }
 
     .services {
+        padding: 6rem 0;
+    }
+
+    .section-header {
+        margin-bottom: 3rem;
+    }
+
+    .section-header h2 {
+        font-size: clamp(2.5rem, 11vw, 4rem);
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card,
+    .service-card-large {
+        grid-column: auto;
+
+        min-height: 380px;
+
+        padding: 1.5rem;
+    }
+
+    .service-content h3 {
+        font-size: 1.75rem;
+    }
+
+}
+
+.projects {
     padding: 6rem 0;
 }
 
-.section-header {
-    margin-bottom: 3rem;
-}
-
-.section-header h2 {
-    font-size: clamp(2.5rem, 11vw, 4rem);
-}
-
-.services-grid {
+.projects-grid {
     grid-template-columns: 1fr;
 }
 
-.service-card,
-.service-card-large {
+.project-card:first-child {
     grid-column: auto;
-
-    min-height: 380px;
-
-    padding: 1.5rem;
 }
 
-.service-content h3 {
-    font-size: 1.75rem;
-}
-
+.project-preview {
+    min-height: 300px;
 }
