@@ -79,3 +79,43 @@
 .project-preview {
     min-height: 300px;
 }
+
+.about {
+    padding: 6rem 0;
+}
+
+.about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.cta-section {
+    padding: 2rem 0 6rem;
+}
+
+.cta-box {
+    padding: 2.5rem 1.5rem;
+    border-radius: 22px;
+}
+
+.contact {
+    padding: 6rem 0;
+}
+
+.contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.contact-links a {
+    grid-template-columns: 1fr auto;
+}
+
+.contact-links a > span:first-child {
+    grid-column: 1 / -1;
+}
+
+.footer-content {
+    flex-direction: column;
+    gap: 0.5rem;
+}

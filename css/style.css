@@ -562,11 +562,9 @@ a {
     justify-content: center;
 
     background:
-        radial-gradient(
-            circle at center,
+        radial-gradient(circle at center,
             rgba(200, 169, 107, 0.12),
-            transparent 50%
-        ),
+            transparent 50%),
         #121212;
 
     border: 1px solid rgba(255, 255, 255, 0.07);
@@ -632,4 +630,180 @@ a {
     transform: translate(3px, -3px);
 
     color: #ffffff;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    padding: 9rem 0;
+    background: #0d0d0d;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: start;
+}
+
+.about-left h2 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1;
+    letter-spacing: -0.045em;
+}
+
+.about-left h2 span {
+    display: block;
+    color: #777777;
+}
+
+.about-right>p {
+    margin-bottom: 1.5rem;
+    color: #a0a0a0;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.about-stats {
+    display: grid;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.about-stats div {
+    padding: 1.3rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-stats strong {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #ffffff;
+}
+
+.about-stats span {
+    color: #777777;
+    font-size: 0.9rem;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta-section {
+    padding: 4rem 0 9rem;
+    background: #0d0d0d;
+}
+
+.cta-box {
+    position: relative;
+    padding: 5rem;
+    border-radius: 30px;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 80% 20%,
+            rgba(200, 169, 107, 0.16),
+            transparent 35%),
+        #141414;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cta-box h2 {
+    max-width: 850px;
+    font-size: clamp(2.8rem, 6vw, 5.5rem);
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+}
+
+.cta-box h2 span {
+    display: block;
+    color: #777777;
+}
+
+.cta-box p:not(.section-label) {
+    max-width: 620px;
+    margin: 2rem 0;
+    color: #999999;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    padding: 9rem 0;
+    background: #090909;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+.contact h2 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1;
+    letter-spacing: -0.045em;
+}
+
+.contact h2 span {
+    display: block;
+    color: #777777;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-links a {
+    display: grid;
+    grid-template-columns: 100px 1fr auto;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1.5rem 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+    transition: padding-left 0.25s ease;
+}
+
+.contact-links a:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-links a:hover {
+    padding-left: 8px;
+}
+
+.contact-links span {
+    color: #777777;
+    font-size: 0.85rem;
+}
+
+.contact-links strong {
+    font-weight: 500;
+}
+
+.footer {
+    padding: 2rem 0;
+
+    background: #090909;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+
+    color: #555555;
+
+    font-size: 0.8rem;
 }
