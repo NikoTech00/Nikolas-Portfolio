@@ -267,7 +267,7 @@ a {
 .section-header h2 span {
     display: block;
 
-    color: #777777;
+    color: #949494;
 }
 
 .section-description {
@@ -699,7 +699,7 @@ a {
 
 .about-left h2 span {
     display: block;
-    color: #777777;
+    color: #949494;
 }
 
 .about-right>p {
@@ -764,7 +764,7 @@ a {
 
 .cta-box h2 span {
     display: block;
-    color: #777777;
+    color: #949494;
 }
 
 .cta-box p:not(.section-label) {
@@ -796,7 +796,7 @@ a {
 
 .contact h2 span {
     display: block;
-    color: #777777;
+    color: #949494;
 }
 
 .contact-links {
@@ -849,4 +849,33 @@ a {
     color: #555555;
 
     font-size: 0.8rem;
+}
+
+/* =========================================
+   LIGHTHOUSE ACCESSIBILITY - CONTRAST
+========================================= */
+
+/* Hero - indicatore scroll */
+.hero-scroll {
+    color: #9a9a9a;
+}
+
+/* Services - numerazione 01 / 02 / 03 */
+.service-number {
+    color: #9a9a9a;
+}
+
+/* About - testo secondario delle statistiche */
+.about-stats span {
+    color: #9a9a9a;
+}
+
+/* Contact - parti secondarie */
+.contact-links span {
+    color: #9a9a9a;
+}
+
+/* Footer */
+.footer-content {
+    color: #9a9a9a;
 }
