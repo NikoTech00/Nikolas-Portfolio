@@ -16,6 +16,8 @@
         display: block;
     }
 
+    /* HERO */
+
     .hero {
         padding-top: 70px;
     }
@@ -32,6 +34,8 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
+    /* SERVICES */
 
     .services {
         padding: 6rem 0;
@@ -52,9 +56,7 @@
     .service-card,
     .service-card-large {
         grid-column: auto;
-
         min-height: 380px;
-
         padding: 1.5rem;
     }
 
@@ -62,60 +64,88 @@
         font-size: 1.75rem;
     }
 
-}
+    /* PROJECTS */
 
-.projects {
-    padding: 6rem 0;
-}
+    .projects {
+        padding: 6rem 0;
+    }
 
-.projects-grid {
-    grid-template-columns: 1fr;
-}
+    .projects-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
 
-.project-card:first-child {
-    grid-column: auto;
-}
+    .project-card,
+    .project-card:first-child {
+        grid-column: auto;
+        min-width: 0;
+        width: 100%;
+    }
 
-.project-preview {
-    min-height: 300px;
-}
+    .project-preview {
+        width: 100%;
+        min-width: 0;
+        min-height: 0;
+        aspect-ratio: 16 / 9;
+    }
 
-.about {
-    padding: 6rem 0;
-}
+    .project-preview img {
+        max-width: 100%;
+    }
 
-.about-grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-}
+    .project-info {
+        min-width: 0;
+    }
 
-.cta-section {
-    padding: 2rem 0 6rem;
-}
+    /* ABOUT */
 
-.cta-box {
-    padding: 2.5rem 1.5rem;
-    border-radius: 22px;
-}
+    .about {
+        padding: 6rem 0;
+    }
 
-.contact {
-    padding: 6rem 0;
-}
+    .about-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 3rem;
+    }
 
-.contact-grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-}
+    /* CTA */
 
-.contact-links a {
-    grid-template-columns: 1fr auto;
-}
+    .cta-section {
+        padding: 2rem 0 6rem;
+    }
 
-.contact-links a > span:first-child {
-    grid-column: 1 / -1;
-}
+    .cta-box {
+        padding: 2.5rem 1.5rem;
+        border-radius: 22px;
+    }
 
-.footer-content {
-    flex-direction: column;
-    gap: 0.5rem;
+    /* CONTACT */
+
+    .contact {
+        padding: 6rem 0;
+    }
+
+    .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 3rem;
+    }
+
+    .contact-links a {
+        grid-template-columns: minmax(0, 1fr) auto;
+    }
+
+    .contact-links a > span:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .contact-links strong {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    /* FOOTER */
+
+    .footer-content {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
