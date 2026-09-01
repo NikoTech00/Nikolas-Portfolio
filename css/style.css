@@ -553,6 +553,86 @@ a {
     min-width: 0;
 }
 
+.project-card-real {
+    grid-column: 1 / -1;
+}
+
+.project-preview-nice {
+    min-height: 380px;
+    background:
+        radial-gradient(circle at 72% 26%, rgba(215, 25, 32, 0.18), transparent 28%),
+        linear-gradient(135deg, #f9f7f3 0%, #ffffff 52%, #f1efeb 100%);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+.project-real-badge {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    z-index: 3;
+    padding: 0.55rem 0.8rem;
+    border-radius: 999px;
+    background: #111111;
+    color: #ffffff;
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+}
+
+.project-nice-brand {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #111111;
+    text-align: center;
+}
+
+.project-nice-kicker {
+    margin-bottom: 1rem;
+    color: #6f6f6f;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+}
+
+.project-nice-brand strong {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(4.5rem, 10vw, 8.5rem);
+    font-weight: 400;
+    line-height: 0.85;
+    letter-spacing: -0.055em;
+}
+
+.project-nice-subtitle {
+    margin-top: 0.8rem;
+    font-size: clamp(0.8rem, 1.4vw, 1.05rem);
+    letter-spacing: 0.45em;
+}
+
+.project-nice-line {
+    width: min(280px, 40%);
+    height: 7px;
+    margin-top: 1.25rem;
+    border-radius: 999px;
+    background: #d71920;
+    transform: rotate(-2deg);
+}
+
+.project-category-real {
+    color: #e7c47e;
+}
+
+.project-description {
+    max-width: 760px;
+    margin-top: 0.6rem;
+    color: #8f8f8f;
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+
 .project-preview {
     position: relative;
     width: 100%;
