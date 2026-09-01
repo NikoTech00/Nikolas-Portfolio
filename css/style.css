@@ -555,37 +555,100 @@ a {
 
 .project-card-real {
     grid-column: 1 / -1;
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    overflow: hidden;
+    background: #101010;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
 }
 
-.project-preview-nice {
-    min-height: 380px;
-    background:
-        radial-gradient(circle at 72% 26%, rgba(215, 25, 32, 0.18), transparent 28%),
-        linear-gradient(135deg, #f9f7f3 0%, #ffffff 52%, #f1efeb 100%);
-    border-color: rgba(255, 255, 255, 0.12);
+.project-card-real:hover {
+    transform: translateY(-3px);
+    border-color: rgba(200, 169, 107, 0.28);
+    background: #121212;
+}
+
+.project-real-layout {
+    min-height: 340px;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+}
+
+.project-real-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(2rem, 5vw, 4.5rem);
 }
 
 .project-real-badge {
-    position: absolute;
-    top: 1.25rem;
-    left: 1.25rem;
-    z-index: 3;
+    align-self: flex-start;
+    margin-bottom: 2rem;
     padding: 0.55rem 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 999px;
-    background: #111111;
+    background: #151515;
     color: #ffffff;
     font-size: 0.62rem;
     font-weight: 700;
     letter-spacing: 0.14em;
 }
 
-.project-nice-brand {
-    position: absolute;
-    inset: 0;
+.project-category-real {
+    margin-bottom: 0.8rem;
+    color: #c8a96b;
+}
+
+.project-real-content h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+}
+
+.project-description {
+    max-width: 590px;
+    margin-top: 1.25rem;
+    color: #8f8f8f;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.project-real-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin-top: 2rem;
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+}
+
+.project-real-link span {
+    transition: transform 0.25s ease;
+}
+
+.project-card-real:hover .project-real-link span {
+    transform: translate(3px, -3px);
+}
+
+.project-real-preview {
+    min-height: 340px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
+    background:
+        radial-gradient(circle at 72% 26%, rgba(215, 25, 32, 0.13), transparent 30%),
+        linear-gradient(135deg, #f9f7f3 0%, #ffffff 55%, #f0ede8 100%);
     color: #111111;
     text-align: center;
 }
@@ -593,14 +656,14 @@ a {
 .project-nice-kicker {
     margin-bottom: 1rem;
     color: #6f6f6f;
-    font-size: 0.68rem;
+    font-size: 0.65rem;
     font-weight: 600;
     letter-spacing: 0.22em;
 }
 
-.project-nice-brand strong {
+.project-real-preview strong {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(4.5rem, 10vw, 8.5rem);
+    font-size: clamp(4rem, 8vw, 7rem);
     font-weight: 400;
     line-height: 0.85;
     letter-spacing: -0.055em;
@@ -608,29 +671,32 @@ a {
 
 .project-nice-subtitle {
     margin-top: 0.8rem;
-    font-size: clamp(0.8rem, 1.4vw, 1.05rem);
-    letter-spacing: 0.45em;
+    font-size: 0.85rem;
+    letter-spacing: 0.42em;
 }
 
 .project-nice-line {
-    width: min(280px, 40%);
-    height: 7px;
-    margin-top: 1.25rem;
+    width: min(230px, 55%);
+    height: 6px;
+    margin-top: 1.15rem;
     border-radius: 999px;
     background: #d71920;
     transform: rotate(-2deg);
 }
 
-.project-category-real {
-    color: #e7c47e;
-}
+@media (max-width: 820px) {
+    .project-real-layout {
+        grid-template-columns: 1fr;
+    }
 
-.project-description {
-    max-width: 760px;
-    margin-top: 0.6rem;
-    color: #8f8f8f;
-    font-size: 0.9rem;
-    line-height: 1.65;
+    .project-real-preview {
+        min-height: 260px;
+        order: -1;
+    }
+
+    .project-real-content {
+        padding: 2rem;
+    }
 }
 
 .project-preview {
