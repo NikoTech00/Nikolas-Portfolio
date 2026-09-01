@@ -1,0 +1,13 @@
+Nikolas Portfolio - SEO fix
+
+File da sostituire nella root:
+- sitemap.xml
+- robots.txt
+- index.html
+
+Audit:
+- Il portfolio è attualmente una single-page: l'unico URL indicizzabile è https://nikolasdanesi.it/
+- canonical e meta robots erano già corretti.
+- title e meta description erano già presenti.
+- robots.txt e sitemap.xml erano vuoti.
+- index.html aveva un tag <link rel="shortcut icon"> senza il carattere > finale; è stato corretto.
