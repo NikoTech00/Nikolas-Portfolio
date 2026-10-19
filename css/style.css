@@ -1077,3 +1077,53 @@ a {
     object-fit: cover;
     object-position: top center;
 }
+/* =========================
+   AGGIUNTE OTTOBRE 2026: prezzi, demo, risultati
+========================= */
+
+.service-price {
+    margin-top: 1.25rem;
+
+    color: #c8a96b !important;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+.service-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.75rem;
+}
+
+.service-link-demo {
+    color: #c8a96b;
+}
+
+.services-note {
+    margin-top: 1.5rem;
+
+    color: #777777;
+
+    font-size: 0.9rem;
+}
+
+.project-result {
+    margin-top: 1rem;
+
+    padding-left: 0.9rem;
+
+    border-left: 2px solid #c8a96b;
+
+    color: #cccccc;
+
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.contact-note {
+    margin-top: 1.5rem;
+
+    color: #777777;
+}
