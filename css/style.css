@@ -1127,3 +1127,9 @@ a {
 
     color: #777777;
 }
+
+.footer a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
