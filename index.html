@@ -1,289 +1,176 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Nikolas Danesi | Siti web, app e automazioni a Saronno</title>
-
-    <meta name="description"
-        content="Sviluppatore a Saronno. Siti web, prenotazioni e promemoria su WhatsApp, automazioni per Excel e dati, per le attività di Saronno e dintorni. Prova le demo.">
-
-    <meta name="author" content="Nikolas Danesi">
-    <meta name="robots" content="index, follow">
-
-    <link rel="canonical" href="https://nikolasdanesi.it/">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Nikolas Danesi | Siti web, app e automazioni a Saronno">
-    <meta property="og:description"
-        content="Siti web, prenotazioni e promemoria su WhatsApp, Excel che si sistemano da soli. Per le attività di Saronno e dintorni.">
-    <meta property="og:url" content="https://nikolasdanesi.it/">
-    <meta property="og:site_name" content="Nikolas Danesi">
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Nikolas Danesi",
-        "description": "Siti web, app gestionali e automazioni per piccole attività locali.",
-        "url": "https://nikolasdanesi.it/",
-        "sameAs": ["https://www.instagram.com/nikolasdanesi.dev/"],
-        "email": "info@nikolasdanesi.it",
-        "telephone": "+39 327 809 7635",
-        "address": { "@type": "PostalAddress", "addressLocality": "Saronno", "addressRegion": "VA", "addressCountry": "IT" },
-        "areaServed": ["Saronno", "Uboldo", "Ceriano Laghetto", "Origgio", "Caronno Pertusella", "Solaro", "Gerenzano", "Cislago", "Rovellasca", "Turate"],
-        "knowsLanguage": "it"
-    }
-    </script>
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="shortcut icon" href="assets/favicon/favicon-32x32.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siti web, app e automazioni per la tua attività | Nikolas Danesi</title>
+<meta name="description" content="Sviluppatore full-stack. Realizzo siti web, prenotazioni con promemoria WhatsApp e automazioni per professionisti e attività, in tutta Italia. Prenota una call gratuita di 15 minuti.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://nikolasdanesi.it/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Siti web, app e automazioni per la tua attività | Nikolas Danesi">
+<meta property="og:description" content="Prezzo fisso scritto prima di iniziare. Prima la call gratuita, poi decidi.">
+<meta property="og:url" content="https://nikolasdanesi.it/">
+<meta property="og:site_name" content="Nikolas Danesi">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Nikolas Danesi","description":"Siti web, app e automazioni per professionisti e piccole attività.","url":"https://nikolasdanesi.it/","sameAs":["https://www.instagram.com/nikolasdanesi.dev/"],"email":"info@nikolasdanesi.it","telephone":"+39 327 809 7635","areaServed":"IT","knowsLanguage":"it"}
+</script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<style>
+.lp-hero{min-height:auto;padding:150px 0 90px}
+.lp-hero .hero-actions{flex-wrap:wrap}
+.lp-note{margin-top:1.5rem;font-size:.85rem;color:#777}
+.lp-proof{background:#0d0d0d;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);padding:2.2rem 0}
+.lp-proof-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.lp-proof strong{display:block;font-size:1.05rem;letter-spacing:-.02em}
+.lp-proof span{font-size:.85rem;color:#8d8d8d}
+.lp-section{padding:7rem 0}
+.lp-section.alt{background:#0d0d0d}
+.lp-h2{font-size:clamp(2.2rem,5vw,4rem);line-height:1;letter-spacing:-.045em;max-width:820px}
+.lp-h2 span{display:block;color:#8d8d8d}
+.lp-lead{max-width:640px;margin-top:1.5rem;color:#a5a5a5}
+.lp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3.5rem}
+.lp-card{padding:2rem;border-radius:22px;background:#141414;border:1px solid rgba(255,255,255,.08);display:flex;flex-direction:column}
+.lp-card h3{font-size:1.25rem;letter-spacing:-.02em;margin-bottom:.8rem}
+.lp-card p{color:#a5a5a5;font-size:.95rem}
+.lp-price{margin-top:auto;padding-top:1.5rem;font-weight:600;color:#c8a96b}
+.lp-link{margin-top:.8rem;font-size:.9rem;color:#d0d0d0}
+.lp-link:hover{color:#fff}
+.lp-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-top:3.5rem}
+.lp-step{padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.15)}
+.lp-step b{display:block;color:#c8a96b;font-size:.8rem;letter-spacing:.18em;margin-bottom:.6rem}
+.lp-step h3{font-size:1.1rem;margin-bottom:.5rem}
+.lp-step p{color:#a5a5a5;font-size:.92rem}
+.lp-case{margin-top:3rem;padding:2.2rem;border-radius:22px;background:#141414;border:1px solid rgba(255,255,255,.08);display:flex;gap:2rem;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.lp-case p{max-width:640px;color:#a5a5a5}
+.lp-case h3{margin-bottom:.6rem;font-size:1.3rem}
+.lp-faq{max-width:820px;margin-top:3rem}
+.lp-faq details{border-bottom:1px solid rgba(255,255,255,.1);padding:1.2rem 0}
+.lp-faq summary{cursor:pointer;font-weight:600;list-style:none}
+.lp-faq summary::-webkit-details-marker{display:none}
+.lp-faq summary::after{content:"+";float:right;color:#c8a96b}
+.lp-faq details[open] summary::after{content:"–"}
+.lp-faq p{margin-top:.8rem;color:#a5a5a5}
+.lp-about{display:grid;grid-template-columns:340px 1fr;gap:4rem;align-items:center;margin-top:3rem}
+.lp-about img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:24px;background:#f2f2f2;box-shadow:0 30px 60px -25px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.08);display:block}
+.lp-about p{color:#a5a5a5;margin-bottom:1.1rem;max-width:620px}
+.lp-about-points{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2rem}
+.lp-about-points strong{display:block;font-size:.95rem}
+.lp-about-points span{font-size:.85rem;color:#8d8d8d}
+.lp-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.6rem}
+.lp-tags li{list-style:none;padding:.35rem .8rem;border:1px solid rgba(255,255,255,.12);border-radius:100px;font-size:.78rem;color:#b7b7b7}
+@media(max-width:900px){.lp-about{grid-template-columns:1fr;gap:2rem}.lp-about img{max-width:320px}.lp-about-points{grid-template-columns:1fr}}
+.lp-sticky{display:none}
+@media(max-width:900px){
+.lp-proof-grid,.lp-grid,.lp-steps{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+.lp-hero{padding:110px 0 60px}
+.lp-section{padding:4.5rem 0}
+.lp-proof-grid,.lp-grid,.lp-steps{grid-template-columns:1fr}
+.cta-box{padding:2.2rem}
+.lp-sticky{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:900;padding:.7rem 5%;background:rgba(10,10,10,.92);backdrop-filter:blur(12px);border-top:1px solid rgba(255,255,255,.08)}
+.lp-sticky .btn{width:100%}
+body{padding-bottom:70px}
+}
+</style>
 </head>
-
 <body>
-
-    <header class="header">
-        <div class="container navbar">
-
-            <a href="#home" class="logo">
-                ND
-            </a>
-
-            <nav class="nav">
-                <a href="#services">Servizi</a>
-                <a href="#projects">Progetti</a>
-                <a href="#about">Chi sono</a>
-                <a href="#contact">Contatti</a>
-            </nav>
-
-            <a href="#contact" class="nav-cta">
-                Parliamone
-            </a>
-            <button class="menu-toggle" id="menuToggle" aria-label="Apri menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
-    <div class="mobile-menu" id="mobileMenu">
-
-        <nav class="mobile-nav">
-            <a href="#services">Servizi</a>
-            <a href="#projects">Progetti</a>
-            <a href="#about">Chi sono</a>
-            <a href="#contact">Contatti</a>
-        </nav>
-
-    </div>
-
-    <main>
-
-        <section class="hero" id="home">
-
-            <div class="container hero-content">
-
-                <p class="hero-label">
-                    SVILUPPATORE · SARONNO
-                </p>
-
-                <h1>
-                    Strumenti digitali
-                    <span>per le attività di Saronno e dintorni.</span>
-                </h1>
-
-                <p class="hero-description">
-                    Siti web, prenotazioni e promemoria su WhatsApp, file Excel che si
-                    sistemano da soli. Prima ti faccio vedere come funziona, poi decidi.
-                </p>
-
-                <div class="hero-actions">
-
-                    <a href="#services" class="btn btn-primary">
-                        Prova le demo
-                    </a>
-
-                    <a href="#contact" class="btn btn-secondary">
-                        Parliamone
-                    </a>
-
-                </div>
-
-            </div>
-
-            <div class="hero-scroll">
-                <span>Scorri</span>
-                <span>↓</span>
-            </div>
-
-        </section>
-
-        <!-- =========================
-     SERVICES
-========================= -->
-
-        <section class="services" id="services">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <p class="section-label">
-                        SERVIZI
-                    </p>
-
-                    <h2>
-                        Meno tempo al telefono,
-                        <span>più tempo per il tuo lavoro.</span>
-                    </h2>
-
-                    <p class="section-description">
-                        Tre cose che faccio per le piccole attività. Ognuna ha una demo
-                        che puoi provare adesso dal telefono, con dati di esempio.
-                        Prezzo fisso e scritto prima di iniziare.
-                    </p>
-
-                </div>
-
-
-                <div class="services-grid">
-
-                    <!-- SITI WEB -->
-                    <article class="service-card service-card-large">
-
-                        <div class="service-number">
-                            01
-                        </div>
-
-                        <div class="service-content">
-
-                            <div class="service-icon">
-                                &lt;/&gt;
-                            </div>
-
-                            <h3>
-                                Siti web
-                            </h3>
-
-                            <p>
-                                Il sito della tua attività: servizi e prezzi, orari, mappa
-                                e un pulsante per scriverti su WhatsApp. Veloce sul telefono
-                                e pensato per farti trovare su Google in zona.
-                            </p>
-
-                            <p class="service-price">Da 450 € · una pagina</p>
-
-                        </div>
-
-                        <div class="service-actions">
-                            <a href="https://site-demo-nikolas.netlify.app/" class="service-link service-link-demo" target="_blank" rel="noopener">
-                                Prova la demo
-                                <span>↗</span>
-                            </a>
-                            <a href="#contact" class="service-link">
-                                Parliamone
-                                <span>→</span>
-                            </a>
-                        </div>
-
-                    </article>
-
-
-                    <!-- GESTIONALE -->
-                    <article class="service-card">
-
-                        <div class="service-number">
-                            02
-                        </div>
-
-                        <div class="service-content">
-
-                            <div class="service-icon">
-                                ◷
-                            </div>
-
-                            <h3>
-                                Prenotazioni e promemoria
-                            </h3>
-
-                            <p>
-                                Agenda del giorno, promemoria su WhatsApp per gli appuntamenti
-                                di domani e l'elenco dei clienti da richiamare. Si installa
-                                sul telefono come un'app.
-                            </p>
-
-                            <p class="service-price">Da 300 € · più una piccola quota mensile</p>
-
-                        </div>
-
-                        <div class="service-actions">
-                            <a href="https://gestionale-demo-nikolas.netlify.app/" class="service-link service-link-demo" target="_blank" rel="noopener">
-                                Prova la demo
-                                <span>↗</span>
-                            </a>
-                        </div>
-
-                    </article>
-
-
-                    <!-- AUTOMAZIONI -->
-                    <article class="service-card">
-
-                        <div class="service-number">
-                            03
-                        </div>
-
-                        <div class="service-content">
-
-                            <div class="service-icon">
-                                ⇄
-                            </div>
-
-                            <h3>
-                                Automazioni e dati
-                            </h3>
-
-                            <p>
-                                Excel pieni di doppioni, report da rifare ogni mese, dati da
-                                copiare a mano: li sistemo una volta e da lì vanno da soli.
-                                Con una dashboard semplice per vedere i numeri.
-                            </p>
-
-                            <p class="service-price">Da 150 € · a lavoro</p>
-
-                        </div>
-
-                        <div class="service-actions">
-                            <a href="https://dashboard-demo-nikolas.netlify.app/" class="service-link service-link-demo" target="_blank" rel="noopener">
-                                Prova la demo
-                                <span>↗</span>
-                            </a>
-                        </div>
-
-                    </article>
-
-                </div>
-
-                <p class="services-note">
-                    Dopo la consegna: manutenzione e piccole modifiche da 30 € al mese, se ti servono.
-                </p>
-
-            </div>
-
-        </section>
-
-        <!-- =========================
-     PROJECTS
-========================= -->
-
-        <section class="projects" id="projects">
+<header class="header">
+ <div class="container navbar">
+  <a href="#" class="logo">ND</a>
+  <nav class="nav">
+   <a href="#cosa">Cosa faccio</a>
+   <a href="#come">Come lavoro</a>
+   <a href="#projects">Progetti</a>
+   <a href="#about">Chi sono</a>
+   <a href="#faq">Domande</a>
+  </nav>
+  <a href="#call" class="nav-cta">Prenota la call</a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Apri menu"><span></span><span></span><span></span></button>
+ </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+ <nav class="mobile-nav">
+  <a href="#cosa">Cosa faccio</a>
+  <a href="#come">Come lavoro</a>
+  <a href="#projects">Progetti</a>
+  <a href="#about">Chi sono</a>
+  <a href="#faq">Domande</a>
+  <a href="#call">Prenota la call</a>
+ </nav>
+</div>
+
+<main>
+<section class="hero lp-hero">
+ <div class="container hero-content">
+  <p class="hero-label">SITI WEB · APP · AUTOMAZIONI</p>
+  <h1>Più richieste e meno lavoro a mano
+   <span>per la tua attività.</span></h1>
+  <p class="hero-description">Realizzo siti web, prenotazioni con promemoria su WhatsApp e automazioni per professionisti e piccole attività. Ci sentiamo in call, in qualunque città tu sia. Prezzo fisso, scritto prima di iniziare.</p>
+  <div class="hero-actions">
+   <a class="btn btn-primary" href="https://wa.me/393278097635?text=Ciao%20Nikolas%2C%20vorrei%20prenotare%20una%20call%20gratuita%20di%2015%20minuti." target="_blank" rel="noopener">Prenota una call gratuita</a>
+   <a class="btn btn-secondary" href="#cosa">Guarda cosa posso fare</a>
+  </div>
+  <p class="lp-note">15 minuti, senza impegno. Rispondo entro un giorno lavorativo.</p>
+ </div>
+</section>
+
+<section class="lp-proof">
+ <div class="container lp-proof-grid">
+  <div><strong>In tutta Italia</strong><span>Call su Meet o Zoom, file e consegna online</span></div>
+  <div><strong>Prezzo fisso</strong><span>Scritto nel preventivo prima di iniziare</span></div>
+  <div><strong>Parli con me</strong><span>Niente passaggi, dalla call alla consegna</span></div>
+  <div><strong>Assistenza dopo</strong><span>Modifiche e manutenzione, se ti servono</span></div>
+ </div>
+</section>
+
+<section class="lp-section" id="cosa">
+ <div class="container">
+  <p class="section-label">COSA FACCIO</p>
+  <h2 class="lp-h2">Tre cose concrete,<span>ognuna con una demo da provare.</span></h2>
+  <p class="lp-lead">Apri le demo dal telefono e vedi come funzionano, con dati di esempio. In call te le mostro con il nome e il settore della tua attività.</p>
+  <div class="lp-grid">
+   <article class="lp-card">
+    <h3>Sito web</h3>
+    <p>Servizi, orari, mappa e un pulsante per scriverti subito su WhatsApp o richiedere un appuntamento. Veloce da telefono e pensato per farti trovare su Google.</p>
+    <p class="lp-price">One-page da 350 € · vetrina da 600 €<br><span style="font-weight:400;color:#a5a5a5;font-size:.85rem">Prezzo di lancio per i primi clienti: 200 € / 400 €</span></p>
+    <a class="lp-link" href="https://site-demo-nikolas.netlify.app/?settore=commercialista&nome=Studio%20Bianchi" target="_blank" rel="noopener">Prova la demo ↗</a>
+   </article>
+   <article class="lp-card">
+    <h3>Prenotazioni e promemoria</h3>
+    <p>Agenda del giorno, promemoria WhatsApp per gli appuntamenti di domani e l'elenco dei clienti da richiamare. Meno disdette dimenticate, meno tempo al telefono.</p>
+    <p class="lp-price">250 € + 10 €/mese<br><span style="font-weight:400;color:#a5a5a5;font-size:.85rem">Prezzo di lancio per i primi clienti: 150 €</span></p>
+    <a class="lp-link" href="https://gestionale-demo-nikolas.netlify.app/?settore=commercialista&nome=Studio%20Bianchi" target="_blank" rel="noopener">Prova la demo ↗</a>
+   </article>
+   <article class="lp-card">
+    <h3>Automazioni e dati</h3>
+    <p>Excel pieni di doppioni, report da rifare ogni mese, dati copiati a mano: li sistemo una volta e poi vanno da soli, con una dashboard semplice per vedere i numeri.</p>
+    <p class="lp-price">Dashboard 150 € · automazioni da 200 €<br><span style="font-weight:400;color:#a5a5a5;font-size:.85rem">Prezzo di lancio per i primi clienti: 90 € / 150 €</span></p>
+    <a class="lp-link" href="https://dashboard-demo-nikolas.netlify.app/?settore=commercialista&nome=Studio%20Bianchi" target="_blank" rel="noopener">Prova la demo ↗</a>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="lp-section alt" id="come">
+ <div class="container">
+  <p class="section-label">COME LAVORO</p>
+  <h2 class="lp-h2">Quattro passi,<span>nessuna sorpresa.</span></h2>
+  <div class="lp-steps">
+   <div class="lp-step"><b>01</b><h3>Call gratuita</h3><p>15 minuti per capire come lavori oggi e dove perdi tempo.</p></div>
+   <div class="lp-step"><b>02</b><h3>Proposta scritta</h3><p>Cosa faccio, in quanto tempo e a che prezzo. Fisso, senza extra nascosti.</p></div>
+   <div class="lp-step"><b>03</b><h3>Realizzazione</h3><p>Ti mostro i passaggi man mano e correggiamo insieme prima della consegna.</p></div>
+   <div class="lp-step"><b>04</b><h3>Consegna e supporto</h3><p>Pubblico tutto e resto il tuo riferimento per modifiche e manutenzione.</p></div>
+  </div>
+  
+ </div>
+</section>
+
+<section class="projects" id="projects">
 
             <div class="container">
 
@@ -299,8 +186,7 @@
                     </h2>
 
                     <p class="section-description">
-                        Una selezione di progetti e concept realizzati
-                        per mostrare il mio approccio al design e allo sviluppo web.
+                        Un sito reale online e due concept, per vedere come lavoro prima di parlarne.
                     </p>
 
                 </div>
@@ -455,163 +341,71 @@
                     </a>
 
 
-                    <!--<article class="project-card">
-
-                        <div class="project-preview">
-                            <div class="project-placeholder">
-                                FITNESS CLUB
-                            </div>
-                        </div>
-
-                        <div class="project-info">
-
-                            <div>
-                                <p class="project-category">
-                                    LANDING PAGE
-                                </p>
-
-                                <h3>
-                                    Fitness Club
-                                </h3>
-                            </div>
-
-                            <span class="project-arrow">
-                                ↗
-                            </span>
-
-                        </div>
-
-                    </article>-->
+                    
                 </div>
             </div>
 
         </section>
-        <section class="about" id="about">
-            <div class="container about-grid">
 
-                <div class="about-left">
-                    <p class="section-label">CHI SONO</p>
+<section class="lp-section alt" id="about">
+ <div class="container">
+  <p class="section-label">CHI SONO</p>
+  <h2 class="lp-h2">Chi c'è dietro il tuo progetto.<span>Un unico referente, dall'idea alla consegna.</span></h2>
+  <div class="lp-about">
+   <img src="assets/images/nikolas.webp" alt="Nikolas Danesi, sviluppatore full-stack" loading="lazy" width="840" height="1050">
+   <div>
+    <p>Sono Nikolas Danesi, sviluppatore full-stack con base a Milano. Progetto e realizzo siti web, app per prenotazioni e automazioni su misura, curando sia ciò che il cliente vede sia ciò che lavora dietro le quinte: un'interfaccia chiara e veloce, dati e processi che ti fanno risparmiare tempo.</p>
+    <p>Ho già consegnato siti per attività reali, oggi online. Lavoro con strumenti moderni e con l'AI per consegnare in tempi rapidi, controllando personalmente ogni passaggio. Ti ascolto in call, ti propongo una soluzione con prezzo chiaro e ti seguo anche dopo la pubblicazione.</p>
+    <div class="lp-about-points">
+     <div><strong>Un solo referente</strong><span>Parli sempre con chi lavora al tuo progetto.</span></div>
+     <div><strong>Prezzo chiaro</strong><span>Fisso e scritto prima di iniziare.</span></div>
+     <div><strong>Assistenza dopo</strong><span>Se qualcosa non va, chiami me.</span></div>
+    </div>
+    <ul class="lp-tags"><li>HTML · CSS</li><li>JavaScript · TypeScript</li><li>Node.js</li><li>PHP · Laravel</li><li>Python</li><li>Git/GitHub</li></ul>
+   </div>
+  </div>
+ </div>
+</section>
 
-                    <h2>
-                        Uno sviluppatore della zona,
-                        <span>non un'agenzia lontana.</span>
-                    </h2>
-                </div>
+<section class="lp-section" id="faq">
+ <div class="container">
+  <p class="section-label">DOMANDE FREQUENTI</p>
+  <h2 class="lp-h2">Prima che tu me lo chieda.</h2>
+  <div class="lp-faq">
+   <details><summary>Lavori solo con chi è vicino a te?</summary><p>No. Lavoro con attività di tutta Italia: ci sentiamo in call, condividiamo i materiali online e ti consegno tutto a distanza. Se sei in zona Milano e dintorni, possiamo anche vederci di persona.</p></details>
+   <details><summary>Quanto ci mette un sito?</summary><p>Un sito one-page è pronto in 7–10 giorni da quando ho testi e foto, un sito vetrina in 2–3 settimane. Agenda e promemoria in 5–7 giorni. Nella proposta scritta trovi la data di consegna.</p></details>
+   <details><summary>Il prezzo può cambiare in corso d'opera?</summary><p>No. Il prezzo è quello della proposta. Se mi chiedi lavori in più, ti faccio prima un nuovo preventivo.</p></details>
+   <details><summary>Dominio e hosting?</summary><p>L'hosting è gratuito. Il dominio costa circa 15–20 € l'anno ed è sempre intestato a te, così resta tuo in ogni caso. Ti aiuto io con la configurazione.</p></details>
+   <details><summary>E se dopo la consegna serve una modifica?</summary><p>Con la manutenzione Basic (20 € al mese) o Care (35 € al mese) hai modifiche incluse e assistenza su WhatsApp, senza vincoli: si disdice con 30 giorni di preavviso. I lavori extra si fanno con un nuovo preventivo.</p></details>
+   <details><summary>Come si paga?</summary><p>50% quando ci accordiamo, 50% quando il lavoro è pronto, prima della pubblicazione. Per il sito one-page puoi anche pagare a rate: 80 € subito e 25 € al mese per 12 mesi, con la manutenzione Basic inclusa. Il prezzo indicato è il totale: prestazione occasionale, senza IVA.</p></details>
+   <details><summary>Devo pagare la call?</summary><p>No, la prima call è gratuita e senza impegno.</p></details>
+  </div>
+ </div>
+</section>
 
-                <div class="about-right">
-                    <p>
-                        Sono Nikolas Danesi, sviluppatore full-stack di Saronno. Lavoro con
-                        le attività della zona: parrucchieri, officine, studi, negozi.
-                        Prima di proporti qualcosa vengo a vedere come lavori.
-                    </p>
+<section class="cta-section" id="call">
+ <div class="container">
+  <div class="cta-box">
+   <p class="section-label">PRIMA CALL GRATUITA</p>
+   <h2>Parliamone in 15 minuti.<span>Poi decidi tu.</span></h2>
+   <p>Scrivimi su WhatsApp con il tipo di attività e la città: ti propongo un orario per la call e, prima, ti preparo qualche idea concreta.</p>
+   <div class="hero-actions">
+    <a class="btn btn-primary" href="https://wa.me/393278097635?text=Ciao%20Nikolas%2C%20vorrei%20prenotare%20una%20call%20gratuita%20di%2015%20minuti." target="_blank" rel="noopener">Scrivimi su WhatsApp</a>
+    <a class="btn btn-secondary" href="mailto:info@nikolasdanesi.it?subject=Richiesta%20call%20gratuita">info@nikolasdanesi.it</a>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
 
-                    <p>
-                        Seguo tutto io, dalla prima chiacchierata alla pubblicazione, e resto
-                        il tuo riferimento anche dopo: se qualcosa non va, chiami me.
-                    </p>
+<footer class="footer">
+ <div class="container footer-content">
+  <p>© 2026 Nikolas Danesi</p>
+  <p>Sviluppatore · <a href="https://www.instagram.com/nikolasdanesi.dev/" target="_blank" rel="noopener">Instagram</a></p>
+ </div>
+</footer>
 
-                    <div class="about-stats">
-                        <div>
-                            <strong>Di persona</strong>
-                            <span>Ci vediamo nella tua attività, a Saronno e dintorni</span>
-                        </div>
-
-                        <div>
-                            <strong>Prezzo chiaro</strong>
-                            <span>Fisso e scritto prima di iniziare</span>
-                        </div>
-
-                        <div>
-                            <strong>Supporto</strong>
-                            <span>Assistenza anche dopo la pubblicazione con manutenzione e gestione </span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="cta-section">
-            <div class="container">
-
-                <div class="cta-box">
-
-                    <p class="section-label">HAI UN PROGETTO?</p>
-
-                    <h2>
-                        Costruiamo qualcosa
-                        <span>che funzioni davvero.</span>
-                    </h2>
-
-                    <p>
-                        Raccontami come lavori oggi e dove perdi tempo.
-                        La prima chiacchierata è gratuita, anche di persona.
-                    </p>
-
-                    <a href="#contact" class="btn btn-primary">
-                        Parliamone
-                    </a>
-
-                </div>
-
-            </div>
-        </section>
-
-        <section class="contact" id="contact">
-            <div class="container contact-grid">
-
-                <div>
-                    <p class="section-label">CONTATTI</p>
-
-                    <h2>
-                        Hai un'idea?
-                        <span>Scrivimi.</span>
-                    </h2>
-                    <p class="contact-note">Rispondo entro un giorno lavorativo.</p>
-                </div>
-
-                <div class="contact-links">
-
-                    <a href="mailto:info@nikolasdanesi.it">
-                        <span>Email</span>
-                        <strong>info@nikolasdanesi.it</strong>
-                        <span>↗</span>
-                    </a>
-
-                    <a href="https://wa.me/393278097635" target="_blank" rel="noopener">
-                        <span>WhatsApp</span>
-                        <strong>Scrivimi su WhatsApp</strong>
-                        <span>↗</span>
-                    </a>
-
-                    <a href="https://www.instagram.com/nikolasdanesi.dev/" target="_blank" rel="noopener">
-                        <span>Instagram</span>
-                        <strong>@nikolasdanesi.dev</strong>
-                        <span>↗</span>
-                    </a>
-
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <div class="container footer-content">
-
-            <p>
-                © 2026 Nikolas Danesi
-            </p>
-
-            <p>
-                Sviluppatore · Saronno (VA) · <a href="https://www.instagram.com/nikolasdanesi.dev/" target="_blank" rel="noopener">Instagram</a>
-            </p>
-
-        </div>
-    </footer>
-    <script src="js/main.js"></script>
-
+<div class="lp-sticky"><a class="btn btn-primary" href="https://wa.me/393278097635?text=Ciao%20Nikolas%2C%20vorrei%20prenotare%20una%20call%20gratuita%20di%2015%20minuti." target="_blank" rel="noopener">Prenota una call gratuita</a></div>
+<script src="js/main.js"></script>
 </body>
-
 </html>
